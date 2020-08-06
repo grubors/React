@@ -10,7 +10,17 @@ function App() {
     <div className="App">
      {/*<Greet></Greet>    ctrl c k */}
       {/* <Welcome /> */}
-      <Hello />
+      <Greet name="Bruce" heroName="Batman">
+        <p>This is inner props</p>
+      </Greet>
+      <Greet name="Clark" heroName="Superman">
+        <button>OK</button>
+      </Greet>
+      <Greet name="Diana" heroName="Wonder Woman"/>
+
+      <Welcome name="Bruce" heroName="Batman" />
+      <Welcome name="Clark" heroName="Superman" />
+      <Welcome name="Diana" heroName="Wonder Woman" />
     </div>
     
   );
